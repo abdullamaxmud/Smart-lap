@@ -1,0 +1,27 @@
+{
+  "name": "hu-smart-lab-server",
+  "version": "1.0.0",
+  "description": "Backend for Hormuud University Smart Lab Management System",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "seed": "node seeder.js",
+    "seed:destroy": "node seeder.js --destroy",
+    "test": "node --test tests/api.test.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.4.1",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
